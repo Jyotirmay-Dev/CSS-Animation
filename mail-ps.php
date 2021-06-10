@@ -17,10 +17,11 @@ $txt = "First Name = ".$firstname."\r\nLast Name = ".$lastname."\r\nEmail = ".$e
 $headers = "From: noreply@jyotirmaydev.com";
 
 if($email!=NULL){
-    mail($to,$subject,$txt,$headers);
+    mail($to,$subject,$txt,$header);
+    header("location:thankyou.html");
 }
 
 //redirect
 
-header("location:thankyou.html");
+
 ?>
