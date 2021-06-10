@@ -17,7 +17,7 @@ $txt = "First Name = ".$firstname."\r\nLast Name = ".$lastname."\r\nEmail = ".$e
 $headers = "From: noreply@jyotirmaydev.com";
 
 if($email!=NULL){
-    mail($to,$subject,$txt,$header);
+    mail($to,$subject,$txt,$headers);
     header("location:thankyou.html");
 }
 
